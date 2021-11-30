@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* block-level */
+
+            display: inline; /* Transforma em inline-level, mesmo se um elemento for block-level*/
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            border-width: 10px; /* A espessura da borda */
+            border-style: solid; /* O estilo da borda */
+            border-color: darkslategray; /* A cor da borda */
+
+            border: 10px solid darkslategray; /* Usando shorthand em 'border' (width -> style -> color) */ 
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px; /* Usando shorthand em 'padding', com o sentido horário (cima -> direita -> baixo -> esquerda) */
+            
+            padding: 10px; /* Usando com só um valor vai fazer com que todos os lados de 'padding' tenham o mesmo espaçamento */
+
+            padding: 10px 20px; /* Usando com dois valores:
+                                            - o primeiro valor é o de cima e o debaixo
+                                            - o segundo valor é o da direita e o da esquerda */
+
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            margin: 10px 10px 10px 10px; /* Usando shorthand em 'margin' com o sentido igual ao de 'padding' */
+
+            margin: 20px auto 40px auto; /* O lado direito e o lado esquerda estão centralizados */
+            /* Usando com quatro valores:
+                    - o primeiro valor é o de cima
+                    - o segundo valor é o da direita
+                    - o terceiro valor é o debaixo
+                    - o quarto valor é da esquerda */ 
+
+            margin: auto; /* Centraliza automaticamente a margem */
+
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: green;
+
+            outline: 10px dashed green; /* Usando shorthand em 'outline' com o mesmo sentido de 'border' */
+
+            /* A ordem de 'padding' e 'margin' é o sentido horário (cima -> direita -> baixo -> esquerda) */
+            /* A ordem de 'border' e 'outline' é width -> style -> color */
+        }
+
+        a { /* inline-level */
+
+            display: block; /* Transforma em block-level, mesmo se um elemento for inline-level */
+            border-width: 10px;
+            border-style: double;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            display: inline-block; /* Transforma em inline-level porém com algumas características de block-level (tamanho, altura, largura, etc) */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    <!-- 'user-agent' é a configuração padrão no navegador -->
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatação de textos</title>
+    <style>
+      body {
+        padding-left: 10px;
+      }
+      h1 {
+        text-align: center;
+        font: Arial;
+      }
+      p {
+        padding-left: 50px;
+      }
+      mark {
+        background-color: red;
+      }
+      h3 {
+        padding-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Principais formatações</h1>
+    <!-- NEGRITO -->
+    <h2>Negrito / Destaque:</h2>
+    <p>
+      Nesta frase temos um
+      <b>termo em negrito</b>
+      usando a tag &lt;b&gt; (NÃO SEMÂNTICA)
+    </p>
+    <p>
+      Nesta frase temos um
+      <strong>termo em destaque</strong>
+      usando a tag &lt;strong&gt; (SEMÂNTICA)
+    </p>
+    <!-- ITÁLICO -->
+    <h2>Itálico / Ênfase:</h2>
+    <p>
+      Nesta frase temos um
+      <i>termo em itálico</i>
+      usando a tag &lt;i&gt; (NÃO SEMÂNTICA)
+    </p>
+    <p>
+      Nesta frase temos um
+      <em>termo em ênfase</em>
+      usando a tag &lt;em&gt; (SEMÂNTICA)
+    </p>
+    <!-- TEXTO MARCADO -->
+    <h2>Texto marcado:</h2>
+    <p>
+      Podemos criar também
+      <mark>um texto marcado</mark>
+      usando a tag &lt;mark&gt;
+    </p>
+    <p>
+      E no outro parágrafo, temos
+      <mark>outro texto marcado</mark>
+      no final
+    </p>
+    <!-- TEXTO GRANDE E PEQUENO -->
+    <h2>Texto grande e pequeno:</h2>
+    <p>
+      Estamos criando um
+      <big>texto grande</big>
+      (usando a tag &lt;big&gt;(OBSOLETO)) e um
+      <small>texto pequeno</small>
+      (usando a tag &lt;small&gt;) nesse parágrafo
+    </p>
+    <!-- TEXTO DELETADO -->
+    <h2>Texto deletado:</h2>
+    <p>
+      Podemos marcar
+      <del>um texto como excluído</del>
+      (usando a tag &lt;del&gt;) para indicar que ele deve ser lido, mas não
+      considerado
+    </p>
+    <!-- TEXTO INSERIDO -->
+    <h2>Texto inserido:</h2>
+    <p>
+      Podemos marcar
+      <ins>um texto como inserido</ins>
+      para dar uma ênfase e indicar que ele foi adicionado depois
+    </p>
+    <!-- TEXTO SOBRESCRITO -->
+    <h2>Texto sobrescrito:</h2>
+    <p>
+      Para inserir coisas do tipo "x
+      <sup>20</sup>
+      +3"
+      <!-- Em cima -->
+    </p>
+    <!-- TEXTO SUBSCRITO -->
+    <h2>Texto subscrito:</h2>
+    <p>
+      Para inserir coisas do tipo "H
+      <sub>2</sub>
+      0"
+      <!-- Embaixo -->
+    </p>
+    <!-- TRECHOS DE CÓDIGO -->
+    <h2>Trechos de código:</h2>
+    <h3>Sem identação (usando a tag &lt;code&gt;):</h3>
+    <p>
+      O comando
+      <code>document.getElementById("test")</code>
+      é escrito em
+      <em>JavaScript</em>
+    </p>
+    <h3>Com identação (usando as tags &lt;pre&gt;&lt;code&gt;)</h3>
+    <pre> <!-- Pré-formatação -->
+      <code>
+        num = int(input('Digite um número'))
+        if (num % 2 == 0):
+            print(f'O número {num} é par')
+        else:
+            print(f'O número {num} é impar')
+        print('FIM DO PROGRAMA')
+      </code>
+    </pre>
+    <!-- CITAÇÕES -->
+    <h2>Citações:</h2>
+    <h3>Simples (usando a tag &lt;q&gt;)</h3>
+    <p>
+      Como diria o pai de um amigo:
+      <q>o computador é um burro muito rápido</q>
+      <!-- Usando o 'q' NÃO acontece a quebra de linha e o descolamento horizontal-->
+    </p>
+    <h3>
+      Completas (usando a tag &lt;blockquote&gt; e usando o parâmetro
+      <em>cite</em>
+      )
+    </h3>
+    <blockquote
+      cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&printsec=frontcover"
+    >
+      A diferença entre os elementos inline e um bloco de texto é importante. Os
+      elementos HTML nesse capítulo descrevem os blocos de texto.
+    </blockquote>
+    <!-- Usando o 'blockquote' acontece a quebra de linha e o deslocamento horizontal -->
+    <!-- ABREVIAÇÕES -->
+    <h2>Abreviações</h2>
+    <p>
+      Estou estudando
+      <abbr title="HyperText Markup Language">HTML</abbr>
+      e
+      <abbr title="Cascading Style Sheets">CSS</abbr>
+      , e estou adorando!
+    </p>
+    <!-- TEXTO INVERTIDO -->
+    <h2>Texto invertido:</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+  </body>
+</html>

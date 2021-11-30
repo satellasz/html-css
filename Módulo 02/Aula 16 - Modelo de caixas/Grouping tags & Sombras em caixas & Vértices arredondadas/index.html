@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(77, 77, 77);
+            text-align: center;
+            padding: 10px 0px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+            /* Cria uma sombra de caixa: 
+                        - primeiro valor -> deslocamento horizontal (h-offset): quanto a sombra vai andar para o lado direito (valores negativos causam o descolamento para a esquerda)
+                        - segundo valor -> deslocamento vertical (v-offset): quanto a sombra vai andar para baixo (valores negativos causam o deslocamento para cima)
+                        - terceiro valor -> embaçamento (blur): quanto a sombra vai se espalhar pelo fundo 
+                        - quarto valor -> cor (color): cor da sombra (é possível usar transparência)
+                    OBS: O padrão da sombra é ela ser externa, para criar uma sombra interna basta colocar o valor 'inset' */
+            /* NÃO exagerar no uso de sombras. Usar cores rgba() para obter transparência que cause efeitos mais suaves */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0px 100px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; 
+            /* Cria uma vértice arredondada na borda:
+                        - se tiver 4 valores: 
+                                - o primeiro valor é o lado superior direito (top-right)
+                                - o segundo valor é o lado superior esquerdo (top-left)
+                                - o terceiro valor é o lado inferior direito (bottom-right)
+                                - o quarto valor é o lado inferior esquerda (bottom-left)
+                        - se tiver 2 valores:
+                                - o primeiro valor são os lados superior direito e inferior direito (top-right & bottom-right)
+                                - o segundo valor são os lados superior esquerdo e inferior esquerdo (top-left & bottom-left)
+                        - se tiver 1 valor: o mesmo valor vai se aplicar para todos os lados da borda
+                    OBS: Pode-se usar % (porcentagem) como valores também */
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.315);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(85, 85, 85);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            text-align: right;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            width: 100px;
+            height: 100px;
+            margin: 10px 50%;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grouping tags são <div> porém com semântica -->
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- Parte de navegação -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal -->
+        <section id="assuntos"> <!-- Sessão -->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article> <!-- Artigo -->
+                <h2>Noticías sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam alias, saepe perferendis nemo repellat commodi asperiores nobis quis consequuntur. Architecto aliquam distinctio tempora quae iste consequuntur unde totam in ab?</p>
+                <aside> <!-- Conteúdo periférico ao artigo -->
+                    <p>Artigo escrito por Bolsonaro</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido por CleberBamBam</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

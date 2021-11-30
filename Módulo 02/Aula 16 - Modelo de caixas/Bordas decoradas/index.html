@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas decoradas</title>
+    <style>
+        h1 {
+            border: 20px solid black;
+            padding: 10px;
+
+            /* Adicionando uma imagem como borda */
+            border-image-source: url(images/borda.png); /* A source da borda */ 
+            border-image-slice: 27; /* Como ela vai se dividir */
+            border-image-repeat: repeat; /* Se a imagem da borda deve ser repetida, arrendondada ou esticada */
+
+            /* Shorthand para imagens como borda */
+            border-image: url(images/borda.png) 27 repeat;
+            /* A ordem é: 
+                    - primeiro valor -> border-image-source
+                    - segundo valor -> border-image-slice
+                    - terceiro valor -> border-image-repeat */
+
+            /* OBS: 'border-image' NECESSITA da propriedade 'border' */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

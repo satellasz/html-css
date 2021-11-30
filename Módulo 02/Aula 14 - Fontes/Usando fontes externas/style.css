@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Snowy Christmas'; /* Pode ser qualquer nome */
+    src: url(fonts/Snowy\ Christmas\ -\ Personal\ Use.otf) format('opentype');
+    /* Tipos de format(): 
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (Apple Advanced Typography)
+            - svg */
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #25201ca2;
+    padding: 10px 25px 15px;
+}
+
+body {
+    padding: 10px 20px 0px;
+    background-image: linear-gradient(to left, #8C5230, #BF8360);
+    font: normal normal 1.05em Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font: normal bold 5.2em 'Snowy Christmas', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font: normal bold 1.7em 'Times New Romans', Times, serif;
+}
+
+p {
+    text-align: justify;
+    font-weight: 600;
+}

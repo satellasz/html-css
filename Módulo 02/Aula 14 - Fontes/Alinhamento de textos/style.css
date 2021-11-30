@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+main {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #25201ca2;
+    padding: 10px 25px 15px;
+}
+
+body {
+    padding: 10px 20px 0px;
+    background-image: linear-gradient(to right, #F0788C, #F6B1C3);
+    color: black;
+}
+
+h1 {
+    font: normal bolder 2em 'Times New Roman', Times, serif;
+    text-align: center;
+    /* 'text-align':
+            - left (esquerda) -> alinha o texto para esquerda (padrão)
+            - right (direita) -> alinha o texto para direita
+            - center (centro) -> alinha o texto para o meio
+            - justify -> alinha o texto tanto para direita quanto para esquerda (muito usado em textos grandes) */
+}
+
+h2 {
+    font: normal bolder 1.5em 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    font: normal 600 1em Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    /* 'text-indent':
+            - da uma indentação (espaçamento da margem) no começo do texto */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML</title>
+  </head>
+  <body>
+    <h1>Imagens dinâmicas (usando as tags &lt;picture&gt; e &lt;source&gt;)</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente e diminuia o tamanho do seu navegador
+    </p>
+
+    <picture>
+      <!-- A tag permite a criação de várias sources -->
+      <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+      <!-- Parâmetros de <source />: 
+                'media' -> indica o tamanho máximo a ser considerado para carregar a imagem 
+                           indicada no parâmetro 'srcset' 
+                'srcset' -> vai configurar o nome da imagem que será carregada quando o 
+                            tamanho inidicado(em pixel) for atingido
+                'type' -> vai indicar o media type que usamos -->
+      <!-- OBS: A ordem de <source /> deve ser levada em consideração ao max-width, de forma 
+                crescente -->
+      <img src="Imagens/foto-g.png" alt="Imagen flexível" />
+    </picture>
+
+    <h1>Reproduzindo áudios (usando a tag &lt;audio&gt; e &lt;source&gt;)</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls>
+    <!-- Parâmetros de <audio></audio>:
+              'preload' -> indica se o áudio será pré-carregado ou não e aceita três valores: 
+                  "auto"(padrão) vai carregar o arquivo inteiro assim que a página for carregada, 
+                          mesmo que o usuário nunca aperte play 
+                  "metadata" vai carregar apenas as informações sobre o arquivo (tamanho, tempo, 
+                             informações de direito, etc) 
+                  "none" não vai carregar absolutamente nada até que o usuário clique no botão
+                         play ou um script inicie a reprodução
+              'controls' -> vai apresentar o player na tela -- IMPORTANTE -- 
+              'autoplay' -> vai iniciar a reprodução do áudio assim que a página for carregada 
+              'loop' -> vai fazer com que o áudio seja repetido eternamente assim que terminar 
+                        a sua reprodução -->
+      <source src="Aúdios/North Oakland Extasy - Squadda B.mp3" type="audio/mpeg">
+      <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+        <a href="Aúdios/North Oakland Extasy - Squadda B.mp3"
+           download="North Oakland Extasy - Squadda B.mp3" type="audio/mpeg">
+          Clique aqui parabaixar o arquivo MP3
+        </a>
+      </p>
+      <!-- O primeiro <source /> vai ser carregado, se falhar o debaixo vai ser carregado 
+           e assim por diante -->
+    </audio>
+    <!-- Compatibilidade com os seguintes tipos de áudio: MP3, WAV, OGG-->
+  </body>
+</html>

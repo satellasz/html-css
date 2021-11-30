@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com fontes</title>
+    <style>
+      main {
+        width: 1200px;
+        background-color: #d9d2ce;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px #25201ca2;
+        padding: 10px 25px 15px;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* "Safe combination": se a primeira fonte não for encontrada, a segunda vai ser selecionada, se a segunda não for encontrada também uma outra fonte vai ser selecionada e assim até chegar em uma mais genérica */
+        font-size: 1.1em; /* Tamanho da fonte */
+        /* 
+        Medidas absolutas:
+            - cm (centímetro)
+            - mm (milímetro)
+            - in (polegada)
+            - px (pixel)
+            - pt (ponto) -> não usar em material impresso em tela
+            - pc (paica) -> não usar em material impresso em tela
+
+        Medidas relativas:
+            - em -> medida relativa ao tamanho atual da fonte:
+                    - 1em geralmente é igual a 16px;
+            - ex -> relativa a altura-x de uma fonte
+            - rem -> igual ao 'em' porém é relativo ao root (fonte configurada no body)
+            - vw (view-width) -> porcentagem da largura da viewport (tamanho da sua tela)
+            - vh (view-heigth) -> porcentagem da altura da viewport
+            - % (porcentagem) */
+
+        /* Recomenda-se o uso de 'px' e 'em' para o 'font-size' */
+        /* 16px é o tamanho padrão do 'font-size' */
+        font-weight: normal; /* Peso da fonte (para aplicar o negrito) */
+        /* Pode ter os valores:
+                - lighter (o mais leve)
+                - normal
+                - bold (negrito)
+                - bolder (extra-negrito)
+                - números de 100 a 900 (contando de 100 em 100) */
+        /* Algumas fontes não possuem tantas variações */
+        font-style: italic; /* Estilo da fonte (para aplicar o itálico) */
+        /* Pode ter os valores: 
+                - italic (mais compatível)
+                - normal
+                - oblique (menos compatível) */
+        text-decoration: none; /* Para deixar sublinhado */
+        /* A grande maioria das fontes não suportam tantas variações de estilo */
+        padding: 10px 20px 0px;
+        background-image: linear-gradient(to left, #293f40, #778c8c);
+      }
+      h1,
+      h2 {
+        /* Múltiplos seletores */
+        text-align: center;
+        font: italic bolder 1.5em Georgia, 'Times New Roman', Times, serif; /* Shorthand font */
+        /* Simplifica as declarações de fontes */
+        /* A ordem dos parâmetros é extremamente IMPORTANTE: 
+              - font-style -> font-weigth -> font-size -> font-family */
+      }
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Trabalhando com fontes</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam
+        ipsa, dignissimos ipsam optio, et dolorem ab tempora tenetur ipsum
+        magnam explicabo illo amet accusamus distinctio cupiditate unde, quaerat
+        pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Tempore assumenda at harum vero iusto id magni atque dolor dolores qui
+        modi nisi reprehenderit, illo similique pariatur reiciendis laborum
+        corrupti aperiam!
+      </p>
+      <h2>Subtítulo do exercício</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos
+        nihil temporibus voluptate architecto odio qui libero quam, totam ex,
+        minus, iure hic dolore repellendus ad sit exercitationem quo minima.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta sed
+        itaque atque ratione. Debitis consequuntur soluta assumenda molestiae
+        voluptatum alias, velit voluptatibus minus pariatur sapiente ab numquam!
+        Laudantium, enim eum?
+      </p>
+    </main>
+  </body>
+</html>

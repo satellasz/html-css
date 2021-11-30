@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com links</title>
+    <style>
+      p {
+        padding-left: 30px;
+      }
+      body {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Links</h1>
+    <h2>Links externos (usando a tag &lt;a&gt;):</h2>
+    <p>
+      Você pode acessar o meu
+      <a href="https://github.com/satellasz/git-test" target="_blank" rel="external">
+        <!-- Coloca-se uma URL no parâmetro 'href' -->
+        <!-- O parâmetro 'target' passando como "_blank" abre-se uma nova guia quando clicado no link -->
+        <!-- O parâmetro 'rel'(relativo a) passando como "external"(link externo) ele vai pra fora do site -->
+        repositório público no GitHub
+      </a>
+      <!-- "a" significa "âncora" -->
+      <p>
+          Você também pode acessar o meu <a href="https://www.youtube.com/channel/UCUvJFHD65nGkEXQUEiSNCyQ" target="_blank" rel="external">canal gratuito no Youtube</a>
+      </p>
+    </p>
+    <h2>Links internos (usando a tag &lt;a&gt; com os parâmetros <em>rel=</em>"next" e <em>rel=</em>"prev"):</h2>
+    <p>Esta é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <!-- target="_self" significa na própria aba -->
+    <!-- rel="next" significa a próxima página do site atual -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    <h2>Links de download (usando a tag &lt;a&gt; com os parâmetros <em>download=</em>"" e <em>type=</em>""</h2>
+    <p>Link para referência da lista de media types no <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana</a></p>
+    <ul>
+      <li><a href="livro/JavaScript - O guia definitivo.pdf" download="JavaScript - O guia definitivo.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+      <!-- O parâmetro 'download' é o nome de como o arquivo vai ser baixado -->
+      <!-- O parâmetro 'type' é o tipo de arquivo que vai ser baixado(opcional em alguns navegadores) -->
+      <li><a href="livro/JavaScript - O guia definitivo.rar" download="JavaScript - O guia definitivo.rar" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+  </body>
+</html>

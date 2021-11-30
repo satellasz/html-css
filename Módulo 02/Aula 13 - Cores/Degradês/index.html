@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configurações globais das CSS */
+            height: 100%; /* Define a altura */
+        }
+        body {
+            background-image: linear-gradient(to right, #3164CE, #714AD0, #D234AA, #FF4C56, #FFC344);
+            /* O gradiente é considerado, pelo navegador, uma imagem por isso usamos 'background-image' */
+            /* 'background-image: linear-gradient()' cria um gradiente linear 
+                    - o primeiro parâmetro é a direção:
+                        - "to up" o degradê vai para cima
+                        - "to right" o degradê vai para direita
+                        - "to left" o degradê vai para esquerda
+                        - "to bottom" o degradê vai para baixo
+                        - direções também podem ser indicados como ângulos 
+                    - o resto dos parâmetros são as cores do degradê (podem ser várias)
+                'background-image: radiant-gradient()' cria um gradiente radial
+                    - os parâmetros são os mesmos do gradiente linear */
+            background-attachment: fixed; /* Deixa o background fixo */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

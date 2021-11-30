@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representando cores</title>
+</head>
+<body>
+    <!-- - toda cor é formada por um conjunto de combinações de vermelho(RED), verde(GREEN) e azul(BLUE) 
+         - cada cor primária pode ter um valor entre 0 e 255, totalizando 256 possibilidades para cada elemento 
+         - se usarmos todas as cores primárias ao MÁXIMO teremos o BRANCO 
+         - se usarmos todas as cores primárias ao MÍNIMO teremos o PRETO -->
+
+    <h2 style="background-color: blue; color: white;">Exemplo de cores</h2> 
+    <!-- Representação por nomes -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est praesentium non nesciunt. Aspernatur, nemo. Aut doloribus eum odio necessitatibus mollitia cupiditate dolore, commodi delectus vel architecto assumenda, est, numquam esse.</p>          
+    <h2 style="background-color: #0000ff; color: #ffffff;">Exemplo de cores</h2> <!-- Representação em hexadecimal -->
+    <!-- Decimal: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 
+                  (ao total 10 algarismos) -->
+    <!-- Hexadecimal: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F 
+                  (ao total 16 algarismos) 
+                  sendo "0" o mais fraco e "F" o mais forte -->
+    <!-- Todo código de cores em hexadecimal DEVE iniciar com # --> 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est praesentium non nesciunt. Aspernatur, nemo. Aut doloribus eum odio necessitatibus mollitia cupiditate dolore, commodi delectus vel architecto assumenda, est, numquam esse.</p>
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de cores</h2> 
+    <!-- Representação por RGB -->
+    <!-- O primeiro parâmetro é o vermelho(RED), o segundo verde(GREEN) e o terceiro (BLUE) 
+                                            R                      G                    B  -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est praesentium non nesciunt. Aspernatur, nemo. Aut doloribus eum odio necessitatibus mollitia cupiditate dolore, commodi delectus vel architecto assumenda, est, numquam esse.</p>
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de cores</h2> 
+    <!-- Representação pelo padrão HSL -->
+    <!-- O padrão HSL é um formato baseado na maneira como o olho humano enxerga as cores -->
+    <!-- O primeiro parâmetro é a matiz(HUE), o segundo saturação(SATURATION)(%) e o terceiro iluminação(LIGHTNESS)(%)             H                            S
+                   L-->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est praesentium non nesciunt. Aspernatur, nemo. Aut doloribus eum odio necessitatibus mollitia cupiditate dolore, commodi delectus vel architecto assumenda, est, numquam esse.</p>
+    <h2 style="background-color: rgba(63, 64, 157, 0.376); color: hsla(0, 60%, 48%, 0.514);">Exemplo de cores</h2>
+    <!-- Usando a ferramenta do VSCode(rgba e hsla) -->
+    <!-- vermelho(RED), verde(GREEN), azul(BLUE) e transparência(ALPHA)
+                   R            G            B                     A   
+         matiz(HUE), saturação(SATURATION), iluminação(LIGHTNESS) e transparência(ALPHA) 
+                H                  S                       L                        A -->      
+    <!-- (Passando o mouse em cima da cor) -->
+    <!-- A barra lateral(direita) representa a COR 
+         O centro reprsenta o TOM 
+         E a barra do lado representa a TRANSPARÊNCIA -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est praesentium non nesciunt. Aspernatur, nemo. Aut doloribus eum odio necessitatibus mollitia cupiditate dolore, commodi delectus vel architecto assumenda, est, numquam esse.</p>
+</body>
+</html>
